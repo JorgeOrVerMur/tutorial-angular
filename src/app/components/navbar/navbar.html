@@ -1,0 +1,35 @@
+<style>
+    nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: #212121;
+        color: white;
+        padding: 10px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+
+    nav a.active {
+        color: rgb(8, 8, 247);
+        text-decoration: underline;
+        font-weight: bold;
+    }
+</style>
+
+<nav>
+    <!-- {exact: true} para que solo se active cuando la ruta sea exactamente esa -->
+    <a routerLink="/counter" routerLinkActive="active" routerLinkActiveOptions="{exact: true}">Contador</a>
+    <a routerLink="/hero" routerLinkActive="active" routerLinkActiveOptions="{exact: true}">Heroe</a>
+    <!-- <a [routerLink]="['/hero', '']">Heroe</a> -->
+
+
+    <!-- Otros componentes
+    <a href="">Contador</a>
+    <a href="">Heroe</a> -->
+
+</nav>
+
+<hr />
