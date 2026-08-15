@@ -23,8 +23,15 @@
     <!-- {exact: true} para que solo se active cuando la ruta sea exactamente esa -->
     <a routerLink="/counter" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Contador</a>
     <a routerLink="/hero" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Heroe</a>
-    <a routerLink="/dragonball" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Dragonball</a>
+    <a routerLink="/dragonball" routerLinkActive="active">Dragonball</a>
+    <a routerLink="/dragonball-super" routerLinkActive="active">Dragonball
+        Super</a>
     <!-- <a [routerLink]="['/hero', '']">Heroe</a> -->
+    <!-- Si character.id es 1, esto genera la ruta "/dragonball/1" -->
+
+    <!-- <a [routerLink]="['/dragonball', character.id]">
+    {{ character.name }}
+  </a> -->
 
 
     <!-- Otros componentes
